@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:id="@+id/txt_edit_img"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="edit image"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/holo_blue_light"/>
+
+
+            <EditText
+                android:id="@+id/et_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/img_pic"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="firstname"
+                />
+
+            <EditText
+                android:id="@+id/et_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_firstname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="lastname"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_lastname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/rv_numbers"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="nickname"
+                />
+
+
+
+            <EditText
+                android:id="@+id/et_work"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_nickname"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="work address"
+                />
+
+            <EditText
+                android:id="@+id/et_home"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_work"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="home address"
+                />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_home"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="email"
+                />
+
+            <EditText
+                android:id="@+id/et_website"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_email"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="website"
+                />
+
+            <EditText
+                android:id="@+id/et_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/et_website"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="birthdate"
+                />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_birthdate"
+                android:layout_marginTop="32dp"
+                android:text="save"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
